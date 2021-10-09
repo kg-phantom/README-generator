@@ -1,8 +1,8 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(!license) {
-    return ''
+    return '';
   }
 
   var badge = '';
@@ -37,30 +37,68 @@ function renderLicenseBadge(license) {
       break;
   }
 
-  return `![License: ${license}](https://img.shields.io/badge/License-${badge}.svg)`;
+  return `[![License: ${license}](https://img.shields.io/badge/License-${badge}.svg)]`;
 }
 
-// TODO: Create a function that returns the license link
+// Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(!license) {
-    return ''
+    return '';
   }
+
+  var badgeLink = '';
+
+  switch(license) {
+    case 'MIT':
+       badgeLink = 'https://opensource.org/licenses/MIT';
+       break;
+    case 'ISC':
+      badgeLink = 'https://opensource.org/licenses/ISC';
+      break;
+    case 'GNU AGPLv3':
+      badgeLink = 'https://www.gnu.org/licenses/agpl-3.0';
+      break;
+    case 'GNU GPLv3':
+      badgeLink = 'https://www.gnu.org/licenses/gpl-3.0';
+      break;
+    case 'GNU LGPLv3':
+      badgeLink = 'https://www.gnu.org/licenses/lgpl-3.0';
+      break;
+    case 'Mozilla Public License 2.0':
+      badgeLink = 'https://opensource.org/licenses/MPL-2.0'
+      break;
+    case 'Apache License 2.0':
+      badgeLink = 'https://opensource.org/licenses/Apache-2.0';
+      break;
+    case 'Boost Software License 1.0':
+      badgeLink = 'https://www.boost.org/LICENSE_1_0.txt';
+      break;
+    case 'Unlicense':
+      badgeLink = 'http://unlicense.org/';
+      break;
+  }
+
+  return `(${badgeLink})`;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(!license) {
-    return ''
+    return '';
   }
 
-  return `${renderLicenseBadge(license)} ${renderLicenseLink(license)}`;
+  return `## License
+  Licensed under the ${license} license.
+  `;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+${renderLicenseBadge(data.license)}${renderLicenseLink(data.license)}
+
 ## Description
 ${data.description}
 
@@ -78,7 +116,6 @@ ${data.installation}
 ## Usage
 ${data.usage}
 
-## License
 ${renderLicenseSection(data.license)}
 
 ## Contributing
