@@ -1,8 +1,8 @@
-# sdfsdfsdf
-[![License: Apache License 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+# asd
+[![License: GNU AGPLv3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ## Description
-sdfsdfsdf
+asd
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,21 +13,20 @@ sdfsdfsdf
 * [Questions](#questions)
 
 ## Installation
-sdfsdfs
+asd
 
 ## Usage
-sdfsfd
+asd
 
 ## License
-  Licensed under the Apache License 2.0 license.
+  Licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0) license.
   
 
 ## Contributing
-sdfsdffs
+as
 
 ## Tests
-sdfsdfd
+asd
 
 ## Questions
-[GitHub](https://github.com/sdfsdfs)
-[Email](sdfsdfsdf)
+If you have any questions, you can contact me through [GitHub](https://github.com/asdasd) or [email](mailto:sdadaad@asdad.com).

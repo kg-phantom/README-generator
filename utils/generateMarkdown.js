@@ -90,7 +90,7 @@ function renderLicenseSection(license) {
   }
 
   return `## License
-  Licensed under the ${license} license.
+  Licensed under the [${license}]${renderLicenseLink(license)} license.
   `;
 }
 
@@ -125,8 +125,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-[GitHub](https://github.com/${data.githubName})
-[Email](${data.email})
+If you have any questions, you can contact me through [GitHub](https://github.com/${data.githubName}) or [email](mailto:${data.email}).
 `;
 }
 

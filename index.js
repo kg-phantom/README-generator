@@ -23,10 +23,11 @@ const questions = [
         name: 'email',
         message: 'What is your email address? (Required)',
         validate: emailInput => {
-            if(emailInput) {
+            const validEmail = /\S+@\S+\.\S+/;
+            if(validEmail.test(emailInput)) {
                 return true;
             } else {
-                console.log('Please enter your email address!');
+                console.log('\nPlease enter a valid email address!');
                 return false;
             }
         }
