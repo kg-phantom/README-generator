@@ -122,11 +122,11 @@ const questions = [
 function writeToFile(data) {
     fs.writeFile('./dist/README.md', data, (err) => {
         if(err) throw err;
-        console.log('Your README.md file has been created!');
+        console.log('Your README.md file has been created! Find it in the dist/ folder of this directory.');
     });
 };
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
         .then(answers => generateMarkdown(answers))

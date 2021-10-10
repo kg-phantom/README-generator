@@ -5,12 +5,14 @@
 ## Description
 Generates a professional README file from user input on the command line so developers can spend less time creating a README and more time working on their projects.
 
+![README Generator Screenshot](assets/images/READMEgenerator-sc.png)
+
+Watch a [README Generator Demo](https://drive.google.com/file/d/1pXGsmqtP4yzJLmhAmLO7_MWLS7ys1ahR/view?usp=sharing).
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
@@ -23,7 +25,17 @@ Generates a professional README file from user input on the command line so deve
 1. Navigate to this repository's root directory on the command line.
 2. Run `node index.js`.
 3. Answer the question prompts about your project.
-4. You can find the generated `README.md` in the `dist/` folder.
+4. You can find the generated `README.md` in the `dist/` folder as shown below:
+
+![Generated README.md file in dist/ folder](assets/images/dist-sc.png)
+
+To open the `README.md` from the command line, type `code README.md` from the dist directory:
+
+![README.md opened in VSCode](assets/images/READMEcode-sc.png)
+
+To view the content of the `README.md` directly on the command line, type `cat README.md` from the dist directory:
+
+![Text content of generated README.md on the command line](assets/images/catREADME-sc.png)
 
 ## License
 Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
