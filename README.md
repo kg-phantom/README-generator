@@ -1,5 +1,5 @@
 # README Generator
-![JavaScript: 100%](https://img.shields.io/badge/JavaScript-100%-blue.svg)
+[![JavaScript: 100%](https://img.shields.io/badge/JavaScript-100%-blue.svg)](https://www.javascript.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Description
