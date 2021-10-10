@@ -1,6 +1,9 @@
 # README Generator
+![JavaScript: 100%](https://img.shields.io/badge/JavaScript-100%-blue)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://choosealicense.com/licenses/mit/)
+
 ## Description
-Generates a README
+Generates a professional README file from user input on the command line so developers can spend less time creating a README and more time working on their projects.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -11,20 +14,20 @@ Generates a README
 * [Questions](#questions)
 
 ## Installation
-clone the repo
+1. Install [Node.js](https://nodejs.org/en/) if you haven't already.
+2. Clone this repository onto your computer.
+3. Navigate to the root of this repository on the command line.
+4. Run `npm install inquirer` on the command line to install Inquirer.
 
 ## Usage
-run node
+1. Navigate to this repository's root directory on the command line.
+2. Run `node index.js`.
+3. Answer the question prompts about your project.
+4. You can find the generated `README.md` in the `dist/` folder.
 
 ## License
-
-
-## Contributing
-nothing
-
-## Tests
-nothing
+Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
 ## Questions
-[GitHub](https://github.com/kg-phantom)
-[Email](ksurbayan@gmail.com)
+- [GitHub](https://github.com/kg-phantom)
+- [Email](mailto:ksurbayan@gmail.com)
